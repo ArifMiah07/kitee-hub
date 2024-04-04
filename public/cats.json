@@ -3,7 +3,7 @@
         "id" : 0,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (1).jpg"
+        "imgUrl" : "imgs/cat-img (1).jpg"
     },
 
 
@@ -11,7 +11,7 @@
         "id" : 1,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (1).png"
+        "imgUrl" : "imgs/cat-img (1).png"
     },
 
 
@@ -19,7 +19,7 @@
         "id" : 2,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (2).jpg"
+        "imgUrl" : "imgs/cat-img (2).jpg"
     },
 
 
@@ -27,7 +27,7 @@
         "id" : 3,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (2).png"
+        "imgUrl" : "imgs/cat-img (2).png"
     },
 
 
@@ -35,7 +35,7 @@
         "id" : 4,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (3).jpg"
+        "imgUrl" : "imgs/cat-img (3).jpg"
     },
 
 
@@ -43,7 +43,7 @@
         "id" : 5,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (3).png"
+        "imgUrl" : "imgs/cat-img (3).png"
     },
 
 
@@ -51,7 +51,7 @@
         "id" : 6,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (41).png"
+        "imgUrl" : "imgs/cat-img (41).png"
     },
 
 
@@ -59,7 +59,7 @@
         "id" : 7,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (4).png"
+        "imgUrl" : "imgs/cat-img (4).png"
     },
 
 
@@ -67,7 +67,7 @@
         "id" : 8,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (5).jpg"
+        "imgUrl" : "imgs/cat-img (5).jpg"
     },
 
 
@@ -75,7 +75,7 @@
         "id" : 9,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (5).png"
+        "imgUrl" : "imgs/cat-img (5).png"
     },
 
 
@@ -83,7 +83,7 @@
         "id" : 10,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (6).jpg"
+        "imgUrl" : "imgs/cat-img (6).jpg"
     },
 
 
@@ -91,7 +91,7 @@
         "id" : 11,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (6).png"
+        "imgUrl" : "imgs/cat-img (6).png"
     },
 
 
@@ -99,7 +99,7 @@
         "id" : 12,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (7).jpg"
+        "imgUrl" : "imgs/cat-img (7).jpg"
     },
 
 
@@ -107,7 +107,7 @@
         "id" : 13,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (7).png"
+        "imgUrl" : "imgs/cat-img (7).png"
     },
 
 
@@ -115,7 +115,7 @@
         "id" : 14,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (8).jpg"
+        "imgUrl" : "imgs/cat-img (8).jpg"
     },
 
 
@@ -123,7 +123,7 @@
         "id" : 15,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (8).png"
+        "imgUrl" : "imgs/cat-img (8).png"
     },
 
 
@@ -131,7 +131,7 @@
         "id" : 16,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (9).jpg"
+        "imgUrl" : "imgs/cat-img (9).jpg"
     },
 
 
@@ -139,7 +139,7 @@
         "id" : 17,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (9).png"
+        "imgUrl" : "imgs/cat-img (9).png"
     },
 
 
@@ -147,7 +147,7 @@
         "id" : 18,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (10).jpg"
+        "imgUrl" : "imgs/cat-img (10).jpg"
     },
 
 
@@ -155,7 +155,7 @@
         "id" : 19,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (10).png"
+        "imgUrl" : "imgs/cat-img (10).png"
     },
 
 
@@ -163,7 +163,7 @@
         "id" : 20,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (11).jpg"
+        "imgUrl" : "imgs/cat-img (11).jpg"
     },
 
 
@@ -171,7 +171,7 @@
         "id" : 21,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (11).png"
+        "imgUrl" : "imgs/cat-img (11).png"
     },
 
 
@@ -179,7 +179,7 @@
         "id" : 22,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (12).jpg"
+        "imgUrl" : "imgs/cat-img (12).jpg"
     },
 
 
@@ -187,7 +187,7 @@
         "id" : 23,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (12).png"
+        "imgUrl" : "imgs/cat-img (12).png"
     },
 
 
@@ -195,7 +195,7 @@
         "id" : 24,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (13).jpg"
+        "imgUrl" : "imgs/cat-img (13).jpg"
     },
 
 
@@ -203,7 +203,7 @@
         "id" : 25,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (13).png"
+        "imgUrl" : "imgs/cat-img (13).png"
     },
 
 
@@ -211,7 +211,7 @@
         "id" : 26,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (14).jpg"
+        "imgUrl" : "imgs/cat-img (14).jpg"
     },
 
 
@@ -219,7 +219,7 @@
         "id" : 27,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (14).png"
+        "imgUrl" : "imgs/cat-img (14).png"
     },
 
 
@@ -227,7 +227,7 @@
         "id" : 28,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (15).jpg"
+        "imgUrl" : "imgs/cat-img (15).jpg"
     },
 
 
@@ -235,7 +235,7 @@
         "id" : 29,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (15).png"
+        "imgUrl" : "imgs/cat-img (15).png"
     },
 
 
@@ -243,7 +243,7 @@
         "id" : 30,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (16).jpg"
+        "imgUrl" : "imgs/cat-img (16).jpg"
     },
 
 
@@ -251,7 +251,7 @@
         "id" : 31,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (16).png"
+        "imgUrl" : "imgs/cat-img (16).png"
     },
 
 
@@ -259,7 +259,7 @@
         "id" : 32,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (17).jpg"
+        "imgUrl" : "imgs/cat-img (17).jpg"
     },
 
 
@@ -267,7 +267,7 @@
         "id" : 33,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (17).png"
+        "imgUrl" : "imgs/cat-img (17).png"
     },
 
 
@@ -275,7 +275,7 @@
         "id" : 34,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (18).jpg"
+        "imgUrl" : "imgs/cat-img (18).jpg"
     },
 
 
@@ -283,7 +283,7 @@
         "id" : 35,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (18).png"
+        "imgUrl" : "imgs/cat-img (18).png"
     },
 
 
@@ -291,7 +291,7 @@
         "id" : 36,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (19).jpg"
+        "imgUrl" : "imgs/cat-img (19).jpg"
     },
 
 
@@ -299,7 +299,7 @@
         "id" : 37,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (19).png"
+        "imgUrl" : "imgs/cat-img (19).png"
     },
 
 
@@ -307,7 +307,7 @@
         "id" : 38,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (20).jpg"
+        "imgUrl" : "imgs/cat-img (20).jpg"
     },
 
 
@@ -315,7 +315,7 @@
         "id" : 39,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (20).png"
+        "imgUrl" : "imgs/cat-img (20).png"
     },
 
 
@@ -323,7 +323,7 @@
         "id" : 40,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (21).jpg"
+        "imgUrl" : "imgs/cat-img (21).jpg"
     },
 
 
@@ -331,7 +331,7 @@
         "id" : 41,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (21).png"
+        "imgUrl" : "imgs/cat-img (21).png"
     },
 
 
@@ -339,7 +339,7 @@
         "id" : 42,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (22).jpg"
+        "imgUrl" : "imgs/cat-img (22).jpg"
     },
 
 
@@ -347,7 +347,7 @@
         "id" : 43,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (22).png"
+        "imgUrl" : "imgs/cat-img (22).png"
     },
 
 
@@ -355,7 +355,7 @@
         "id" : 44,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (23).jpg"
+        "imgUrl" : "imgs/cat-img (23).jpg"
     },
 
 
@@ -363,7 +363,7 @@
         "id" : 45,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (23).png"
+        "imgUrl" : "imgs/cat-img (23).png"
     },
 
 
@@ -371,7 +371,7 @@
         "id" : 46,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (24).png"
+        "imgUrl" : "imgs/cat-img (24).png"
     },
 
 
@@ -379,7 +379,7 @@
         "id" : 47,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (25).png"
+        "imgUrl" : "imgs/cat-img (25).png"
     },
 
 
@@ -387,7 +387,7 @@
         "id" : 48,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (26).png"
+        "imgUrl" : "imgs/cat-img (26).png"
     },
 
 
@@ -395,7 +395,7 @@
         "id" : 49,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (27).png"
+        "imgUrl" : "imgs/cat-img (27).png"
     },
 
 
@@ -403,7 +403,7 @@
         "id" : 50,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (28).png"
+        "imgUrl" : "imgs/cat-img (28).png"
     },
 
 
@@ -411,7 +411,7 @@
         "id" : 51,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (29).png"
+        "imgUrl" : "imgs/cat-img (29).png"
     },
 
 
@@ -419,7 +419,7 @@
         "id" : 52,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (30).png"
+        "imgUrl" : "imgs/cat-img (30).png"
     },
 
 
@@ -427,7 +427,7 @@
         "id" : 53,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (31).png"
+        "imgUrl" : "imgs/cat-img (31).png"
     },
 
 
@@ -435,7 +435,7 @@
         "id" : 54,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (32).png"
+        "imgUrl" : "imgs/cat-img (32).png"
     },
 
 
@@ -443,7 +443,7 @@
         "id" : 55,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (33).png"
+        "imgUrl" : "imgs/cat-img (33).png"
     },
 
 
@@ -451,7 +451,7 @@
         "id" : 56,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (34).png"
+        "imgUrl" : "imgs/cat-img (34).png"
     },
 
 
@@ -459,7 +459,7 @@
         "id" : 57,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (35).png"
+        "imgUrl" : "imgs/cat-img (35).png"
     },
 
 
@@ -467,7 +467,7 @@
         "id" : 58,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (36).png"
+        "imgUrl" : "imgs/cat-img (36).png"
     },
 
 
@@ -475,7 +475,7 @@
         "id" : 59,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (37).png"
+        "imgUrl" : "imgs/cat-img (37).png"
     },
 
 
@@ -483,7 +483,7 @@
         "id" : 60,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (38).png"
+        "imgUrl" : "imgs/cat-img (38).png"
     },
 
 
@@ -491,7 +491,7 @@
         "id" : 61,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (39).png"
+        "imgUrl" : "imgs/cat-img (39).png"
     },
 
 
@@ -499,7 +499,7 @@
         "id" : 62,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (40).png"
+        "imgUrl" : "imgs/cat-img (40).png"
     },
 
 
@@ -507,6 +507,6 @@
         "id" : 63,
         "name" : "Cat",
         "title" : "cute cat sticker",
-        "imgUrl" : "../public/imgs/cat-img (4).jpg"
+        "imgUrl" : "imgs/cat-img (4).jpg"
     }
 ]

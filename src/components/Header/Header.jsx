@@ -15,12 +15,12 @@ const Header = () => {
                     </ul>
                     </div>
                     <div className="flex items-center gap-1">
-                        <img className="w-12 h-12" src="../../../public/cateehub-logo.png" alt="" />
+                        <img className="w-12 h-12" src="cateehub-logo.png" alt="" />
                         <a className="w-fit text-2xl font-bold uppercase"><span>Kitee</span><span>Hub</span></a>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="flex items-center gap-12 menu menu-horizontal px-1">
                     <li><NavLink to={`/`}>Home</NavLink></li>
                     <li><NavLink to={`/about`}>About</NavLink></li>
                     </ul>
