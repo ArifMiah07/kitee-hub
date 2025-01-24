@@ -12,6 +12,7 @@ const Navbar = () => {
                     <ul tabIndex={0} className="flex items-center gap-12 menu menu-sm dropdown-content mt-3 z-[1] p-12 shadow bg-base-100 rounded-box w-52">
                     <li><NavLink to={'/'}>Home</NavLink></li>
                     <li><NavLink to={'/about'}>About</NavLink></li>
+                    <li><NavLink to={'/gmail'}>Gmail</NavLink></li>
                     </ul>
                     </div>
                     <div className="flex items-center gap-1">
@@ -23,10 +24,11 @@ const Navbar = () => {
                     <ul className="flex items-center gap-12 menu menu-horizontal px-1">
                     <li><NavLink to={'/'}>Home</NavLink></li>
                     <li><NavLink to={'/about'}>About</NavLink></li>
+                    <li><NavLink to={'/gmail'}>Gmail</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <a className="btn">Ask</a>
                 </div>
             </nav>
         </>
