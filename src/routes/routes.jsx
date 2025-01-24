@@ -4,6 +4,7 @@ import Main from "../layouts/Main/Main";
 import Home from "../Home/Home/Home";
 import About from "../Home/About/About";
 import EmailGen from "../AlphaWordGo/components/Email/EmailGen/EmailGen";
+import UserName from "../AlphaWordGo/components/UserName/UserName";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         {
           path: "/gmail",
           element: <EmailGen></EmailGen>,
+        },
+        {
+          path: "/username",
+          element: <UserName></UserName>
         }
       ],
     },
