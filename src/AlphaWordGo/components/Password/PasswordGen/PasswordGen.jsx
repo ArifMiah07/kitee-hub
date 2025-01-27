@@ -259,35 +259,41 @@ const PasswordGen = () => {
   };
 
   return (
-    <div className="flex flex-row items-center justify-center max-auto w-full mb-3">
-      <div className="flex flex-col items-center justify-center gap-4 max-auto w-full">
-        <button className="btn bg-amber-300" onClick={handleStage}>
+    <div className="flex flex-col items-center justify-center w-full mb-3 p-4">
+      <div className="flex flex-col items-center justify-center gap-6 w-full max-w-lg">
+        <button
+          className="bg-amber-300 hover:bg-amber-400 text-black px-6 py-3 rounded-md text-lg font-semibold"
+          onClick={handleStage}>
           Stage
         </button>
+
         {genWordWorld1 ? (
-          <div className="flex flex-col gap-4 items-center justify-start text-left max-auto ">
-            <div className="flex flex-row items-center gap-2 ">
+          <div className="w-full space-y-6">
+            <div className="flex flex-row justify-center gap-6">
               <button
                 onClick={handleWordGen}
-                className="bg-blue-500 text-white px-4 py-2 rounded-md">
+                className="bg-blue-500 text-white px-6 py-3 rounded-md text-lg hover:bg-blue-600">
                 Generate Password
               </button>
               <button
                 onClick={() => handleDownload(genWord, "GeneratedWords.txt")}
-                className="bg-green-500 text-white px-4 py-2 rounded-md ml-4">
+                className="bg-green-500 text-white px-6 py-3 rounded-md text-lg hover:bg-green-600">
                 Download
               </button>
             </div>
-            <div className="flex flex-col items-center justify-start text-left max-auto w-full h-[500px] overflow-y-scroll">
+
+            <div className="h-[500px] overflow-y-auto space-y-3">
               {genWord.length > 0 ? (
                 genWord.map((word, index) => (
-                  <div className="w-full h-full" key={index}>
-                    <h1 className=" bg-green-300 p-2 my-2">
-                      <span className="bg-green-300 p-3">{index}</span> |{" "}
-                      <span className="bg-green-300 w-full h-full text-wrap p-3 hover:bg-green-600 hover:text-white hover:font-medium">
+                  <div
+                    key={index}
+                    className="flex items-center justify-start border border-red-500 bg-green-300 p-4 rounded-md shadow-sm">
+                    <div className="w-full flex items-center justify-start gap-5  bg-green-300 p-4 rounded-md shadow-sm">
+                      <span className="text-lg font-semibold">{index + 1}</span>
+                      <span className="text-lg font-medium text-gray-700">
                         {word}
                       </span>
-                    </h1>
+                    </div>
                   </div>
                 ))
               ) : (
@@ -296,40 +302,43 @@ const PasswordGen = () => {
             </div>
           </div>
         ) : (
-          <div className="flex flex-col items-center justify-start text-left max-auto ">
-            <div className="flex flex-row items-center gap-2 mb-3">
+          <div className="w-full space-y-6">
+            <div className="flex flex-row justify-center gap-6">
               <button
                 onClick={handleWordGen2}
-                className="bg-green-500 text-white px-4 py-2 rounded-md ml-4">
+                className="bg-green-500 text-white px-6 py-3 rounded-md text-lg hover:bg-green-600">
                 Generate Collection
               </button>
 
-              <div className="flex flex-row bg-red-400">
+              <div className="flex flex-row items-center bg-red-400 p-2 rounded-md">
                 <input
-                  className=" border border-red-300  px-4 py-2 "
-                  placeholder="enter number of digits"
+                  className="border border-red-300 px-4 py-2 rounded-l-md focus:outline-none"
+                  placeholder="Enter number of digits"
                   name="numberOfDigits"
                   type="text"
                 />
+                <button
+                  onClick={() =>
+                    handleDownload(genWord2, "GeneratedCollection.txt")
+                  }
+                  className="bg-green-500 text-white px-6 py-3 rounded-r-md text-lg hover:bg-green-600">
+                  Download
+                </button>
               </div>
-              <button
-                onClick={() =>
-                  handleDownload(genWord2, "GeneratedCollection.txt")
-                }
-                className="bg-green-500 text-white px-4 py-2 rounded-md ml-4">
-                Download
-              </button>
             </div>
-            <div className="flex flex-col items-center justify-start text-left max-auto w-full h-[500px] overflow-y-scroll">
+
+            <div className="h-[500px] overflow-y-auto space-y-3">
               {genWord2.length > 0 ? (
                 genWord2.map((word, index) => (
-                  <div className="w-full " key={index}>
-                    <h1 className="bg-green-300 p-2 my-2">
-                      <span className="bg-green-300 p-3">{index}</span> |{" "}
-                      <span className="bg-green-300 p-3 hover:bg-green-600 hover:text-white hover:font-medium">
+                  <div
+                    key={index}
+                    className="flex items-center justify-start border border-red-500 bg-green-300 p-4 rounded-md shadow-sm">
+                    <div className="w-full flex items-center justify-start gap-5  bg-green-300 p-4 rounded-md shadow-sm">
+                      <span className="text-lg font-semibold">{index + 1}</span>
+                      <span className="text-lg font-medium text-gray-700">
                         {word}
                       </span>
-                    </h1>
+                    </div>
                   </div>
                 ))
               ) : (

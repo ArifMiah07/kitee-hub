@@ -30,23 +30,41 @@ const UserName = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4">
-      <h1 className="text-xl font-bold">Username Generator</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-400 via-indigo-500 to-blue-500 p-6">
+      <h1 className="text-3xl font-extrabold text-white mb-8 text-center">
+        Username Generator
+      </h1>
+      
       <button
         onClick={handleGenerateUsernames}
-        className="btn text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded"
+        className="bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-500 text-white py-3 px-8 rounded-lg shadow-md text-xl transform transition-all duration-300 ease-in-out hover:scale-105"
       >
         Generate Usernames
       </button>
-      <div className="mt-4">
-        {usernames.map((username, index) => (
-          <div key={index} className="text-lg font-mono">
-            {index + 1}. {username}
-          </div>
-        ))}
+  
+      <div className="mt-8 w-full max-w-lg">
+        {usernames.length > 0 ? (
+          usernames.map((username, index) => (
+            <div
+              key={index}
+              className="bg-white p-4 mb-4 rounded-lg shadow-lg flex justify-between items-center text-lg font-mono text-blue-800"
+            >
+              <span>{index + 1}. {username}</span>
+              <button
+                className="text-blue-500 hover:text-blue-700 focus:outline-none"
+                onClick={() => navigator.clipboard.writeText(username)}
+              >
+                Copy
+              </button>
+            </div>
+          ))
+        ) : (
+          <p className="text-lg text-white text-center">No usernames generated yet!</p>
+        )}
       </div>
     </div>
   );
+  
 };
 
 export default UserName;

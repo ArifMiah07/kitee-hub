@@ -26,40 +26,53 @@ const WordGen = () => {
     
       function generateMultipleUsernames() {
         const usernames = [];
-        const randomNumber = Math.ceil(Math.random() * 98) + 1;
+        const randomNumber = Math.ceil(Math.random() * 998) + 1;
         for (let i = 0; i < randomNumber; i++) {
           const randomDigits = Math.ceil(Math.random() * 14) + 2;
           usernames.push(userGenerator(randomDigits));
           //   console.log("randomDigits: ",randomDigits);
         }
-        console.log("randomNumber :", randomNumber);
+        // console.log("randomNumber :", randomNumber);
+        
         return usernames;
       }
+
       
   const handleWordGen = ()=> {
     const usernames = generateMultipleUsernames();
-      console.log(usernames);
+    // setCount(usernames.length)
+    //   console.log(usernames);
     setMakeRandomWord(usernames)
   }
+  console.log(makeRandomWord.length);
   console.log(makeRandomWord);
 
   return (
-    <div className="flex flex-col items-center w-full">
-      <h1 className="font-bold text-2xl p-2">Generate Random Word</h1>
-      <div className="flex flex-col items-center">
-        <button onClick={handleWordGen} className="bg-green-400 hover:bg-green-500 focus:bg-green-600 text-black hover:text-white focus:text-white  p-2">Generate Word</button>
+    <div className="flex flex-col items-center w-full min-h-screen bg-gradient-to-r from-teal-400 via-green-400 to-teal-600 p-6">
+      <h1 className="text-4xl font-semibold text-white mb-6">Generate Random Word</h1>
+
+      <div className="flex flex-col items-center mb-6">
+        <button
+          onClick={handleWordGen}
+          className="relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105"
+        >
+          Generate Word
+          <span className="absolute -bottom-4 -right-8 text-xs p-2 rounded-r-none rounded-l-full rounded-b-full rounded-t-full bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white transition-all duration-300 ease-in-out transform hover:scale-105">{makeRandomWord.length}</span>
+        </button>
       </div>
-      <div className="w-full h-full flex flex-row flex-wrap gap-4 items-center p-4 ">
-        {
-            makeRandomWord.map((word, i)=> (
-                <div className="flex flex-row float-left flex-wrap w-full h-full" key={i}>
-                    <p className="bg-green-400 flex flex-row items-center justify-center float-left flex-wrap w-fit h-full text-[#000] rounded-full p-3 border-x-4 border-t border-red-700  ">{word}</p>
-                </div>
-            ))
-        }
+  
+      <div className="w-full h-full flex flex-row flex-wrap gap-6 justify-center">
+        {makeRandomWord.map((word, i) => (
+          <div key={i} className="flex flex-row flex-wrap justify-center">
+            <p className="bg-white text-green-700 py-2 px-6 rounded-full shadow-md transform transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg cursor-pointer text-xl border-l-4 border-t-4 border-green-500">
+              {word}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );
+  
 };
 
 export default WordGen;
