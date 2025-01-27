@@ -14,6 +14,7 @@ const Navbar = () => {
                     <li><NavLink to={'/about'}>About</NavLink></li>
                     <li><NavLink to={'/gmail'}>Gmail</NavLink></li>
                     <li><NavLink to={'/username'}>Username</NavLink></li>
+                    <li><NavLink to={'/word'}>Word</NavLink></li>
                     </ul>
                     </div>
                     <div className="flex items-center gap-1">
@@ -27,6 +28,7 @@ const Navbar = () => {
                     <li><NavLink to={'/about'}>About</NavLink></li>
                     <li><NavLink to={'/gmail'}>Gmail</NavLink></li>
                     <li><NavLink to={'/username'}>Username</NavLink></li>
+                    <li><NavLink to={'/word'}>Word</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">

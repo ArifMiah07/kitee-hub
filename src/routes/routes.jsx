@@ -5,6 +5,7 @@ import Home from "../Home/Home/Home";
 import About from "../Home/About/About";
 import EmailGen from "../AlphaWordGo/components/Email/EmailGen/EmailGen";
 import UserName from "../AlphaWordGo/components/UserName/UserName";
+import WordGen from "../AlphaWordGo/components/Word/WordGen/WordGen";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         {
           path: "/username",
           element: <UserName></UserName>
+        },
+        {
+          path: "/word",
+          element: <WordGen></WordGen>
         }
       ],
     },
