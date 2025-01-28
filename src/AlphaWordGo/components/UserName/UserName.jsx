@@ -4,7 +4,7 @@ const UserName = () => {
   const [usernames, setUsernames] = useState([]);
 
   const chars = "abcdefghijklmnopqrstuvwxyz0123456789";
-  const symbols = "._";
+  const symbols = "_";
   
   const generateUsername = (minLength = 3, maxLength = 15) => {
     const length = Math.floor(Math.random() * (maxLength - minLength + 1)) + minLength;
