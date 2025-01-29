@@ -62,7 +62,7 @@ const Variations = () => {
     };
 
 
-    const randomDigits = Math.ceil(Math.random() * 5) + 1;
+    const randomDigits = Math.ceil(Math.random() * 9) + 1;
     setWordLength(randomDigits);
     makeMultipleUserName(randomDigits);
     // console.log(newWordList);
