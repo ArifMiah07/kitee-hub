@@ -24,7 +24,7 @@ const PasswordGen = () => {
   //   ];
   // const text = "\n Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing."
   const codes = [];
-  for (let i = 97; i <= 122; i++) {
+  for (let i = 33; i <= 126; i++) {
     codes.push(i);
   }
   const chars = codes.map((code) => String.fromCharCode(code));
@@ -257,9 +257,6 @@ const PasswordGen = () => {
     link.download = fileName;
     link.click();
   };
-
-  
-
 
   return (
     <div className="flex flex-col items-center justify-center w-full mb-3 p-4">

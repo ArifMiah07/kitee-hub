@@ -77,6 +77,7 @@ const Variations = () => {
   const handleVariants = () => {
     console.log("Clicked");
     userNameVariationN();
+    console.log(newWordList);
     setWordVariantN(newWordList);
     // setWordVariantN()
   };
