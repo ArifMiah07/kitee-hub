@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Variations = () => {
   const [wordVariantN, setWordVariantN] = useState([]);
+  const [wordLength, setWordLength] = useState(0);
 
 
 
@@ -40,9 +41,11 @@ const Variations = () => {
     const vowels = ["a", "e", "i", "o", "u"];
     
     //   const newWordList2 = [];
-    const makeMultipleUserName = (n) => {
-      for (let i = 1; i <= 100; i++) {
-        const newArr = Array(n)
+    const makeMultipleUserName = (digits) => {
+        const randomNumber = Math.ceil(Math.random() * 99) + 1;
+    
+      for (let i = 1; i <= randomNumber; i++) {
+        const newArr = Array(digits)
           .fill(0)
           .map(
             (_, i) =>
@@ -53,13 +56,16 @@ const Variations = () => {
         const newWord = newArr.join("");
         newWordList.push(newWord);
         
-        console.log("wordVariantN: ", wordVariantN);
-        console.log(newWord);
+        // console.log("wordVariantN: ", wordVariantN);
+        // console.log(newWord);
       }
     };
 
-    makeMultipleUserName(5);
-    console.log(newWordList);
+
+    const randomDigits = Math.ceil(Math.random() * 5) + 1;
+    setWordLength(randomDigits);
+    makeMultipleUserName(randomDigits);
+    // console.log(newWordList);
   };
 
 
@@ -84,6 +90,9 @@ const Variations = () => {
           Generate Word
           <span className="absolute -bottom-4 -right-8 text-xs p-2 rounded-r-none rounded-l-full rounded-b-full rounded-t-full border border-green-900 hover:outline-dashed hover:outline-green-800 bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white transition-all duration-300 ease-in-out transform hover:scale-105">
             {wordVariantN.length}
+          </span>
+          <span className="absolute -bottom-8 -right-16 text-xs p-2 rounded-r-none rounded-l-full rounded-b-full rounded-t-full border border-green-900 hover:outline-dashed hover:outline-green-800 bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white transition-all duration-300 ease-in-out transform hover:scale-105">
+            {wordLength * 2}
           </span>
         </button>
       <div className="flex gap-4">
