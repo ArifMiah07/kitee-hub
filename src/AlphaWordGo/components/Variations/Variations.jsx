@@ -62,6 +62,12 @@ const Variations = () => {
     console.log(newWordList);
   };
 
+
+  const handleVariantsN = (n) => {
+    console.log("Clicked", n);
+
+  };
+
   const handleVariants = () => {
     console.log("Clicked");
     userNameVariationN();
@@ -70,8 +76,8 @@ const Variations = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-12 w-full min-h-screen bg-gradient-to-r from-teal-400 via-green-400 to-teal-600 p-6">
-      <div>
+    <div className="flex flex-col items-center gap-8 w-full min-h-screen bg-gradient-to-r from-teal-400 via-green-400 to-teal-600 p-6">
+      <div className="flex flex-col gap-8">
         <button
           onClick={handleVariants}
           className="relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
@@ -80,6 +86,29 @@ const Variations = () => {
             {wordVariantN.length}
           </span>
         </button>
+      <div className="flex gap-4">
+        
+        <button
+          onClick={()=>handleVariantsN(1)}
+          className={`relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105`}>
+         V1
+        </button>
+        <button
+          onClick={()=>handleVariantsN(2)}
+          className="relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+         V2
+        </button>
+        <button
+          onClick={()=>handleVariantsN(3)}
+          className="relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+         V3
+        </button>
+        <button
+          onClick={()=>handleVariantsN(4)}
+          className="relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+         V4
+        </button>
+      </div>
       </div>
       <div className="w-full h-full flex flex-row flex-wrap gap-6 justify-center">
         {wordVariantN?.map((word, i) => (
