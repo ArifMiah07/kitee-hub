@@ -6,6 +6,7 @@ import About from "../Home/About/About";
 import EmailGen from "../AlphaWordGo/components/Email/EmailGen/EmailGen";
 import UserName from "../AlphaWordGo/components/UserName/UserName";
 import WordGen from "../AlphaWordGo/components/Word/WordGen/WordGen";
+import Variations from "../AlphaWordGo/components/Variations/Variations";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
         {
           path: "/word",
           element: <WordGen></WordGen>
+        },
+        {
+          path: '/variations',
+          element: <Variations></Variations>
         }
       ],
     },

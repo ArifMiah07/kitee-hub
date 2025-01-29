@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const WordGen = () => {
   const [makeRandomWord, setMakeRandomWord] = useState([]);
@@ -48,11 +49,17 @@ const WordGen = () => {
         Generate Random Word
       </h1>
       <div className="w-full h-full flex flex-row justify-center gap-12">
-        <div className="flex flex-col items-center mb-6">
+        <div className="flex flex-row gap-20 items-center mb-6">
+          <span>
+            <Link to={"/variations"}>
+              <button className="relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+                Variations
+              </button>
+            </Link>
+          </span>
           <button
             onClick={handleWordGen}
-            className="relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105"
-          >
+            className="relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
             Generate Word
             <span className="absolute -bottom-4 -right-8 text-xs p-2 rounded-r-none rounded-l-full rounded-b-full rounded-t-full border border-green-900 hover:outline-dashed hover:outline-green-800 bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white transition-all duration-300 ease-in-out transform hover:scale-105">
               {makeRandomWord.length}
@@ -81,20 +88,20 @@ const WordGen = () => {
               currentPage === 1
                 ? "bg-gray-400 cursor-not-allowed"
                 : "bg-green-600 hover:bg-green-700"
-            }`}
-          >
+            }`}>
             Previous
           </button>
           <span className="w-full flex flex-row items-center text-white text-xl font-medium ">{`Page ${currentPage} of ${totalPages}`}</span>
           <button
-            onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+            onClick={() =>
+              setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+            }
             disabled={currentPage === totalPages}
             className={`py-2 px-4 rounded-lg text-white text-lg ${
               currentPage === totalPages
                 ? "bg-gray-400 cursor-not-allowed"
                 : "bg-green-600 hover:bg-green-700"
-            }`}
-          >
+            }`}>
             Next
           </button>
         </div>
