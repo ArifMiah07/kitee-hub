@@ -57,8 +57,11 @@ const Navbar = () => {
             <li>
               <NavLink to={"/about"}>About</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to={"/gmail"}>Gmail</NavLink>
+            </li> */}
+            <li>
+              <NavLink to={"/instagram"}>Instagram</NavLink>
             </li>
             <li>
               <NavLink to={"/username"}>Username</NavLink>

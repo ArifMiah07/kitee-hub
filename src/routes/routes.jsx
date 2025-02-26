@@ -8,6 +8,7 @@ import UserName from "../AlphaWordGo/components/UserName/UserName";
 import WordGen from "../AlphaWordGo/components/Word/WordGen/WordGen";
 import Variations from "../AlphaWordGo/components/Variations/Variations";
 import BoxGen from "../AlphaWordGo/components/BoxGen/BoxGen";
+import InstagramUser from "../AlphaWordGo/components/Variations/InstagramUser";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         path: "/box",
         element: <BoxGen></BoxGen>,
       },
+      {
+        path: "/instagram",
+        element: <InstagramUser></InstagramUser>
+      }
     ],
   },
 ]);
