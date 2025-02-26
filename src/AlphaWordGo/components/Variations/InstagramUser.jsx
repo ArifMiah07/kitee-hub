@@ -1,11 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const InstagramUser = () => {
   const [wordVariantN, setWordVariantN] = useState([]);
   const [wordLength, setWordLength] = useState(0);
 
-  const newWordList = [];
 
+ 
+  
+//   const [data, setData] = useState([]);
+
+//   useEffect(()=>{
+//     fetch('https://www.instagram.com/zobi')
+//     .then(res => res.json())
+//     .then(data => {
+//         console.log(data);
+//         setData(data);
+//     })
+//   }, [])
+// console.log(data);
+
+  const newWordList = [];
   const userNameVariationN = () => {
     // const alphabet = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
     const constantAlphabet = [
@@ -76,6 +90,25 @@ const InstagramUser = () => {
     setWordVariantN(newWordList);
     // setWordVariantN()
   };
+
+//   const checkAccountExistence = async (word) => {
+//     try {
+//       const response = await fetch(`http://localhost:5000/check-account?username=${word}`);
+//       const data = await response.json();
+//       console.log(word, data.status); // Logging result for each word
+//       return data.status; // 'exists' or 'not exists'
+//     } catch (error) {
+//       console.log(word, "not exists (error)");
+//       return "not exists";
+//     }
+// };
+// // checkAccountExistence('zobi')
+
+// // Loop through all words and check existence
+// wordVariantN.forEach((word) => {
+//     checkAccountExistence(word);
+// });
+
 
   return (
     <div className="flex flex-col items-center gap-8 w-full min-h-screen bg-gradient-to-r from-teal-400 via-green-400 to-teal-600 p-6">
