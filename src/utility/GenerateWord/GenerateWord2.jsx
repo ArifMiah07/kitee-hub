@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const GenerateWords = () => {
+const GenerateWords2 = () => {
   const [makeRandomWord, setMakeRandomWord] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const wordsPerPage = 100; // Number of words per page
@@ -102,4 +102,4 @@ const GenerateWords = () => {
   );
 };
 
-export default GenerateWords;
+export default GenerateWords2;
