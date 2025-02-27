@@ -1,3 +1,37 @@
+export const commonPlatForms = [
+    { id: 1, name: "Instagram", url: "instagram.com/", total_users: 2350000000 },
+    { id: 2, name: "Twitter (X)", url: "twitter.com/", total_users: 556000000 },
+    { id: 3, name: "Facebook", url: "facebook.com/", total_users: 3050000000 },
+    { id: 4, name: "LinkedIn", url: "linkedin.com/in/", total_users: 1000000000 },
+    { id: 5, name: "TikTok", url: "tiktok.com/@", total_users: 1700000000 },
+    { id: 6, name: "Pinterest", url: "pinterest.com/", total_users: 482000000 },
+    { id: 7, name: "Snapchat", url: "snapchat.com/add/", total_users: 414000000 },
+    { id: 8, name: "Reddit", url: "reddit.com/user/", total_users: 430000000 },
+    // { id: 9, name: "Tumblr", url: ".tumblr.com", total_users: 135000000 },
+    { id: 10, name: "Mastodon", url: "mastodon.instance/@", total_users: 10000000 },
+    { id: 11, name: "YouTube", url: "youtube.com/@", total_users: 2700000000 },
+    { id: 12, name: "Medium", url: "medium.com/@", total_users: 100000000 },
+    { id: 13, name: "Dev.to", url: "dev.to/", total_users: 10000000 },
+    // { id: 14, name: "Substack", url: ".substack.com", total_users: 35000000 },
+    // { id: 15, name: "WordPress", url: ".wordpress.com", total_users: 810000000 },
+    // { id: 16, name: "Blogger", url: ".blogspot.com", total_users: 100000000 },
+    { id: 17, name: "GitHub", url: "github.com/", total_users: 100000000 },
+    { id: 18, name: "GitLab", url: "gitlab.com/", total_users: 30000000 },
+    { id: 19, name: "Bitbucket", url: "bitbucket.org/", total_users: 10000000 },
+    // { id: 20, name: "Stack Overflow", url: "stackoverflow.com/users/userid/", total_users: 20000000 },
+    { id: 21, name: "Twitch", url: "twitch.tv/", total_users: 140000000 },
+    { id: 22, name: "Steam Community", url: "steamcommunity.com/id/", total_users: 132000000 },
+    // { id: 23, name: "Xbox Live", url: "xboxgamertag.com/profile/", total_users: 120000000 },
+    // { id: 24, name: "PlayStation Network", url: "my.playstation.com/profile/", total_users: 120000000 },
+    { id: 25, name: "Fiverr", url: "fiverr.com/", total_users: 4300000 },
+    { id: 26, name: "Upwork", url: "upwork.com/freelancers/~", total_users: 18000000 },
+    { id: 27, name: "Behance", url: "behance.net/", total_users: 30000000 },
+    { id: 28, name: "Dribbble", url: "dribbble.com/", total_users: 17000000 },
+    // { id: 29, name: "OpenSea", url: "opensea.io/collection/", total_users: 2500000 },
+    // { id: 30, name: "Lens Protocol", url: "lenster.xyz/u/", total_users: 300000 },
+    // { id: 31, name: "Nostr", url: ".nostr.build", total_users: 500000 }
+  ];
+  
 export const ListOfPlatforms = [
     {
       id: 1,

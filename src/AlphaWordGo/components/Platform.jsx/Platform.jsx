@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ListOfPlatforms } from "./PlatformData";
+import { commonPlatForms, ListOfPlatforms } from "./PlatformData";
 
 const Platform = () => {
   const [wordVariantN, setWordVariantN] = useState([]);
@@ -107,7 +107,7 @@ const uniquePlatforms = ListOfPlatforms.filter((value, index, self) =>
       <div className="flex flex-col items-center gap-8">
         <div className="w-full h-full flex flex-col items-center flex-wrap gap-4">
           <div className="w-full h-full flex flex-wrap gap-4">
-            {uniquePlatforms.map((platform) => (
+            {commonPlatForms.map((platform) => (
               <button
                 key={platform.id}
                 onClick={() => handleVariantsN(platform.id)}
