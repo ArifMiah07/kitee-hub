@@ -73,7 +73,7 @@ const InstagramUser = () => {
       }
     };
 
-    const randomDigits = Math.ceil(Math.random() * 15);
+    const randomDigits = Math.ceil(Math.random() * 6);
     setWordLength(randomDigits);
     makeMultipleUserName(randomDigits);
     // console.log(newWordList);

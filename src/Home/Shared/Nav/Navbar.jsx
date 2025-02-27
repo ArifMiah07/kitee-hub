@@ -63,8 +63,11 @@ const Navbar = () => {
             <li>
               <NavLink to={"/instagram"}>Instagram</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to={"/username"}>Username</NavLink>
+            </li> */}
+            <li>
+              <NavLink to={"/platforms"}>Platforms</NavLink>
             </li>
             <li>
               <NavLink to={"/word"}>Word</NavLink>
