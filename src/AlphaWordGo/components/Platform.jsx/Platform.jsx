@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { commonPlatForms, ListOfPlatforms } from "./PlatformData";
+// import GenerateWord from "../../../utility/GenerateWord/GenerateWord";
 
 const Platform = () => {
   const [wordVariantN, setWordVariantN] = useState([]);
