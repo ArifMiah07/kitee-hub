@@ -86,7 +86,7 @@ const Platform = () => {
 
     //   const newWordList2 = [];
     const makeMultipleUserName = (digits) => {
-      const randomNumber = Math.ceil(Math.random() * 999) + 1;
+      const randomNumber = Math.ceil(Math.random() * 99) + 1;
 
       for (let i = 1; i <= randomNumber; i++) {
         const newArr = Array(digits)
@@ -130,148 +130,148 @@ const Platform = () => {
   };
 
   // Remove duplicates based on `id`
-  const uniquePlatforms = ListOfPlatforms.filter(
-    (value, index, self) =>
-      index === self.findIndex((platform) => platform.id === value.id)
-  );
+  // const uniquePlatforms = ListOfPlatforms.filter(
+  //   (value, index, self) =>
+  //     index === self.findIndex((platform) => platform.id === value.id)
+  // );
 
-  console.log(uniquePlatforms);
-  console.log(ListOfPlatforms);
-  console.log(currentPlatformId, currentPlatform);
-  console.log(currentUserName);
+  // console.log(uniquePlatforms);
+  // console.log(ListOfPlatforms);
+  // console.log(currentPlatformId, currentPlatform);
+  // console.log(currentUserName);
   //handle platforms
 
   return (
-    <div className="flex flex-col items-center gap-8 w-full min-h-screen bg-gradient-to-r from-teal-400 via-green-400 to-teal-600 p-6">
-      <div className="flex flex-col items-center gap-8">
-        <div className="w-full h-full flex flex-col items-center flex-wrap gap-4">
-          <div className="w-full h-full flex flex-wrap gap-4">
-            {commonPlatForms.map((platform) => (
-              <button
-                key={platform.id}
-                onClick={() => handleVariantsN(platform.id)}
-                className={`relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105`}>
-                {platform.name}
-              </button>
-            ))}
-          </div>
-
-          <div>
-            {currentPlatform && (
-              <div className="flex flex-col items-center gap-4">
+    <>
+      <div className="flex flex-col items-center mb-0 gap-8 w-full min-h-screen bg-gradient-to-r from-teal-400 via-green-400 to-teal-600 p-6">
+        <div className="flex flex-col items-center gap-8">
+          <div className="w-full h-full flex flex-col items-center flex-wrap gap-4">
+            <div className="w-full h-full flex flex-wrap gap-4">
+              {commonPlatForms.map((platform) => (
                 <button
-                  onClick={handleVariants}
-                  className="relative w-[400px] bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
-                  {`Generate ${currentPlatform.name} username`}
-                  <span className="absolute -bottom-4 -right-0 text-xs p-2 rounded-r-none rounded-l-full rounded-b-full rounded-t-full border border-green-900 hover:outline-dashed hover:outline-green-800 bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white transition-all duration-300 ease-in-out transform hover:scale-105">
-                    {wordVariantN.length}
-                  </span>
-                  <span className="absolute -bottom-8 -right-8 text-xs p-2 rounded-r-none rounded-l-full rounded-b-full rounded-t-full border border-green-900 hover:outline-dashed hover:outline-green-800 bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white transition-all duration-300 ease-in-out transform hover:scale-105">
-                    {wordLength * 2}
+                  key={platform.id}
+                  onClick={() => handleVariantsN(platform.id)}
+                  className={`relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105`}>
+                  {platform.name}
+                </button>
+              ))}
+            </div>
+
+            <div>
+              {currentPlatform && (
+                <div className="flex flex-col items-center gap-4">
+                  <button
+                    onClick={handleVariants}
+                    className="relative w-[400px] bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+                    {`Generate ${currentPlatform.name} usernames`}
+                    <span className="absolute -bottom-4 -right-0 text-xs p-2 rounded-r-none rounded-l-full rounded-b-full rounded-t-full border border-green-900 hover:outline-dashed hover:outline-green-800 bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white transition-all duration-300 ease-in-out transform hover:scale-105">
+                      {wordVariantN.length}
+                    </span>
+                    <span className="absolute -bottom-8 -right-8 text-xs p-2 rounded-r-none rounded-l-full rounded-b-full rounded-t-full border border-green-900 hover:outline-dashed hover:outline-green-800 bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white transition-all duration-300 ease-in-out transform hover:scale-105">
+                      {wordLength * 2}
+                    </span>
+                  </button>
+                </div>
+              )}
+            </div>
+            <div>
+              {currentPlatform && (
+                <>
+                  <div className="mt-4">
+                    <h3>Selected Platform:</h3>
+                    <p>{currentPlatform.name}</p>
+                    <p>{`${currentPlatform.url}${currentUserName}`}</p>
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-full flex flex-row flex-wrap mt-8 gap-6 justify-center">
+          {wordVariantN?.map((word, i) => (
+            <div key={i} className="flex flex-row flex-wrap justify-center">
+              {currentPlatform && (
+                <p
+                  onClick={() => setCurrentUserName(word)}
+                  className="bg-white text-green-700 py-2 px-6 rounded-full shadow-md transform transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg cursor-pointer text-xl border-l-4 border-t-4 border-green-500">
+                  <a
+                    href={`https://www.${currentPlatform.url}${word}`}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    {word}
+                  </a>
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+        {/* <GenerateWords2></GenerateWords2> */}
+        {currentPlatform && (
+          <div className="flex flex-col items-center w-full h-full bg-gradient-to-r from-teal-400 via-green-400 to-teal-600 p-6">
+            <div className="w-full h-full flex flex-row justify-center gap-12">
+              <div className="flex flex-row gap-20 items-center mb-6">
+                <button
+                  onClick={handleWordGen}
+                  className="relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+                  {`Generate More Realistic ${currentPlatform?.name} Usernames`}
+                  <span className="absolute -bottom-4 -right-8 text-xs p-2 rounded-r-none rounded-l-full rounded-b-full rounded-t-full border border-green-900 hover:outline-dashed hover:outline-green-800 bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white transition-all duration-300 ease-in-out transform hover:scale-105">
+                    {makeRandomWord.length}
                   </span>
                 </button>
-                {/* <GenerateWords2></GenerateWords2> */}
-                <div className="flex flex-col items-center w-full h-full bg-gradient-to-r from-teal-400 via-green-400 to-teal-600 p-6">
-                  <div className="w-full h-full flex flex-row justify-center gap-12">
-                    <div className="flex flex-row gap-20 items-center mb-6">
-                      <button
-                        onClick={handleWordGen}
-                        className="relative bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
-                        {`Generate More Real ${currentPlatform?.name} Username`}
-                        <span className="absolute -bottom-4 -right-8 text-xs p-2 rounded-r-none rounded-l-full rounded-b-full rounded-t-full border border-green-900 hover:outline-dashed hover:outline-green-800 bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white transition-all duration-300 ease-in-out transform hover:scale-105">
-                          {makeRandomWord.length}
-                        </span>
-                      </button>
-                    </div>
-                  </div>
+              </div>
+            </div>
 
-                  <div className="w-full h-full flex flex-row flex-wrap gap-6 justify-center">
-                    {currentWords.map((word, i) => (
-                      <div
-                        key={i}
-                        className="flex flex-row flex-wrap justify-center">
-                        {currentPlatform && (
-                          <p className="bg-white text-green-700 py-2 px-6 rounded-full shadow-md transform transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg cursor-pointer text-xl border-l-4 border-t-4 border-green-500">
-                            <a
-                              href={`https://www.${currentPlatform.url}${word}`}
-                              target="_blank"
-                              rel="noopener noreferrer">
-                              {word}
-                            </a>
-                          </p>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Pagination Controls */}
-                  {totalPages > 1 && (
-                    <div className="flex flex-row gap-4 mt-6">
-                      <button
-                        onClick={() =>
-                          setCurrentPage((prev) => Math.max(prev - 1, 1))
-                        }
-                        disabled={currentPage === 1}
-                        className={`py-2 px-4 rounded-lg text-white text-lg ${
-                          currentPage === 1
-                            ? "bg-gray-400 cursor-not-allowed"
-                            : "bg-green-600 hover:bg-green-700"
-                        }`}>
-                        Previous
-                      </button>
-                      <span className="w-full flex flex-row items-center text-white text-xl font-medium ">{`Page ${currentPage} of ${totalPages}`}</span>
-                      <button
-                        onClick={() =>
-                          setCurrentPage((prev) =>
-                            Math.min(prev + 1, totalPages)
-                          )
-                        }
-                        disabled={currentPage === totalPages}
-                        className={`py-2 px-4 rounded-lg text-white text-lg ${
-                          currentPage === totalPages
-                            ? "bg-gray-400 cursor-not-allowed"
-                            : "bg-green-600 hover:bg-green-700"
-                        }`}>
-                        Next
-                      </button>
-                    </div>
+            <div className="w-full h-full flex flex-row flex-wrap gap-6 justify-center">
+              {currentWords.map((word, i) => (
+                <div key={i} className="flex flex-row flex-wrap justify-center">
+                  {currentPlatform && (
+                    <p className="bg-white text-green-700 py-2 px-6 rounded-full shadow-md transform transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg cursor-pointer text-xl border-l-4 border-t-4 border-green-500">
+                      <a
+                        href={`https://www.${currentPlatform.url}${word}`}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        {word}
+                      </a>
+                    </p>
                   )}
                 </div>
+              ))}
+            </div>
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="flex flex-row gap-4 mt-6">
+                <button
+                  onClick={() =>
+                    setCurrentPage((prev) => Math.max(prev - 1, 1))
+                  }
+                  disabled={currentPage === 1}
+                  className={`py-2 px-4 rounded-lg text-white text-lg ${
+                    currentPage === 1
+                      ? "bg-gray-400 cursor-not-allowed"
+                      : "bg-green-600 hover:bg-green-700"
+                  }`}>
+                  Previous
+                </button>
+                <span className="w-full flex flex-row items-center text-white text-xl font-medium ">{`Page ${currentPage} of ${totalPages}`}</span>
+                <button
+                  onClick={() =>
+                    setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+                  }
+                  disabled={currentPage === totalPages}
+                  className={`py-2 px-4 rounded-lg text-white text-lg ${
+                    currentPage === totalPages
+                      ? "bg-gray-400 cursor-not-allowed"
+                      : "bg-green-600 hover:bg-green-700"
+                  }`}>
+                  Next
+                </button>
               </div>
             )}
           </div>
-          <div>
-            {currentPlatform && (
-              <>
-                <div className="mt-4">
-                  <h3>Selected Platform:</h3>
-                  <p>{currentPlatform.name}</p>
-                  <p>{`${currentPlatform.url}${currentUserName}`}</p>
-                </div>
-              </>
-            )}
-          </div>
-        </div>
+        )}
       </div>
-      <div className="w-full h-full flex flex-row flex-wrap mt-8 gap-6 justify-center">
-        {wordVariantN?.map((word, i) => (
-          <div key={i} className="flex flex-row flex-wrap justify-center">
-            {currentPlatform && (
-              <p
-                onClick={() => setCurrentUserName(word)}
-                className="bg-white text-green-700 py-2 px-6 rounded-full shadow-md transform transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg cursor-pointer text-xl border-l-4 border-t-4 border-green-500">
-                <a
-                  href={`https://www.${currentPlatform.url}${word}`}
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  {word}
-                </a>
-              </p>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
+    </>
   );
 };
 
