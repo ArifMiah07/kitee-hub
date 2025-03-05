@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { commonPlatForms, ListOfPlatforms } from "./PlatformData";
 // import GenerateWords2 from "../../../utility/GenerateWord/GenerateWord2";
 // import GenerateWord from "../../../utility/GenerateWord/GenerateWord";
@@ -12,7 +12,11 @@ const Platform = () => {
   const [currentUserName, setCurrentUserName] = useState("");
   const [makeRandomWord, setMakeRandomWord] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  
+
+
   const wordsPerPage = 100; // Number of words per page
+
 
   function userGenerator(digits) {
     const lowercase = "abcdefghijklmnopqrstuvwxyz";
@@ -128,6 +132,22 @@ const Platform = () => {
     setCurrentPlatform(platform);
     console.log(platform.url); // Log the platform URL directly
   };
+
+  // useEffect(()=>{
+  //   fetch('https://github.com/dwyl/english-words/blob/master/words_dictionary.json')
+  //   .then(res => res.json())
+  //   .then(data => {
+  //     console.log(data);
+  //     setWord(data);
+  //   })
+  
+  // }, [])
+// console.log(word);
+
+
+
+
+
 
   // Remove duplicates based on `id`
   // const uniquePlatforms = ListOfPlatforms.filter(
