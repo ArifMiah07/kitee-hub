@@ -182,7 +182,7 @@ const Platform = () => {
                 <div className="flex flex-col items-center gap-4">
                   <button
                     onClick={handleVariants}
-                    className="relative w-[400px] bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+                    className="relative w-fit bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
                     {`Generate ${currentPlatform.name} usernames`}
                     <span className="absolute -bottom-4 -right-0 text-xs p-2 rounded-r-none rounded-l-full rounded-b-full rounded-t-full border border-green-900 hover:outline-dashed hover:outline-green-800 bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-500 text-white transition-all duration-300 ease-in-out transform hover:scale-105">
                       {wordVariantN.length}

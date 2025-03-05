@@ -51,7 +51,7 @@ const router = createBrowserRouter([
       {
         path: "/platforms",
         element: <Platforms></Platforms>
-      }
+      },
     ],
   },
 ]);
