@@ -25,32 +25,20 @@ const Navbar = () => {
               tabIndex={0}
               className="flex items-center gap-12 menu menu-sm dropdown-content mt-3 z-[1] p-12 shadow bg-base-100 rounded-box w-52">
               <li>
-              <NavLink to={"/"}>Home</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/about"}>About</NavLink>
-            </li>
-            {/* <li>
-              <NavLink to={"/gmail"}>Gmail</NavLink>
-            </li> */}
-            <li>
-              <NavLink to={"/instagram"}>Instagram</NavLink>
-            </li>
-            {/* <li>
-              <NavLink to={"/username"}>Username</NavLink>
-            </li> */}
-            <li>
-              <NavLink to={"/platforms"}>Platforms</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/word"}>Word</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/box"}>Box</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/login"}>Login</NavLink>
-            </li>
+                <NavLink to={"/"}>Home</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/about"}>About</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/gmail"}>Gmail</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/username"}>Username</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/word"}>Word</NavLink>
+              </li>
             </ul>
           </div>
           <div className="flex items-center gap-1">
@@ -86,9 +74,6 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink to={"/box"}>Box</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/login"}>Login</NavLink>
             </li>
           </ul>
         </div>
