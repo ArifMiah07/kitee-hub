@@ -10,6 +10,8 @@ import Variations from "../AlphaWordGo/components/Variations/Variations";
 import BoxGen from "../AlphaWordGo/components/BoxGen/BoxGen";
 import InstagramUser from "../AlphaWordGo/components/Variations/InstagramUser";
 import Platforms from "../AlphaWordGo/pages/Platforms";
+import HomeFromGamePage from "../AlphaWordGo/Game/pages/Home/Home";
+import FeaturesFromGamePage from "../AlphaWordGo/Game/pages/features/Features";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +56,16 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: '/game',
+    element: <HomeFromGamePage></HomeFromGamePage>,
+    children: [
+      {
+        path: '/',
+        element: <FeaturesFromGamePage></FeaturesFromGamePage>
+      }
+    ]
+  }
 ]);
 
 export default router;
