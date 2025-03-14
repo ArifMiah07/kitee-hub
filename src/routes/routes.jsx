@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import Main from "../layouts/Main/Main";
+// import Main from "../layouts/Main/Main";
 import Home from "../Home/Home/Home";
 import About from "../Home/About/About";
 import EmailGen from "../AlphaWordGo/components/Email/EmailGen/EmailGen";
@@ -12,11 +12,22 @@ import InstagramUser from "../AlphaWordGo/components/Variations/InstagramUser";
 import Platforms from "../AlphaWordGo/pages/Platforms";
 import HomeFromGamePage from "../AlphaWordGo/Game/pages/Home/Home";
 import FeaturesFromGamePage from "../AlphaWordGo/Game/pages/features/Features";
+import MainFromMotion from "../motion/layouts/Main/Main";
+import HomeFromMotion from "../motion/Home/Home";
+import Root from "../layouts/Root/Root";
+import MotionAbout from "../motion/Pages/Features/About/About";
+import MotionBlog from "../motion/Pages/Features/Blog/Blog";
+import MotionContact from "../motion/Pages/Features/Contact/Contact";
+import MotionSurprise from "../motion/Pages/Features/Surprise/Surprise";
+import ErrorPage from "../motion/Pages/Shared/ErrorPage/ErrorPage";
+
+
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: <Root></Root>,
     children: [
       {
         path: "/",
@@ -57,14 +68,45 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
+    path: '/game-home',
     element: <HomeFromGamePage></HomeFromGamePage>,
     children: [
       {
-        path: '/game',
+        path: 'game',
         element: <FeaturesFromGamePage></FeaturesFromGamePage>
       }
     ]
+  },
+  {
+    path: "/motion",
+    element: <MainFromMotion />, // Main layout for motion
+    errorElement: <ErrorPage />, // Global error handling for motion routes
+    children: [
+      {
+        index: true, // Default route for "/motion"
+        element: <HomeFromMotion />,
+      },
+      {
+        path: "about",
+        element: <MotionAbout />,
+      },
+      {
+        path: "blog",
+        element: <MotionBlog />,
+      },
+      {
+        path: "contact",
+        element: <MotionContact />,
+      },
+      {
+        path: "surprise",
+        element: <MotionSurprise />,
+      },
+      {
+        path: "*", // Catch-all route for 404 errors inside /motion
+        element: <ErrorPage />,
+      },
+    ],
   }
 ]);
 
