@@ -1,4 +1,5 @@
-import MotionPath from "../Components/ui/Box1";
+import Box1 from "../Components/ui/Box1";
+
 
 
 const HomeFromMotion = () => {
@@ -6,7 +7,7 @@ const HomeFromMotion = () => {
         <div>
             <h1>this is home from motion</h1>
             <div>
-                <MotionPath></MotionPath>
+                <Box1></Box1>
             </div>
         </div>
     );
