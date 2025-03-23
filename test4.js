@@ -53,7 +53,9 @@ console.log(Matrix(4))
  * 
  *     n * k1 = 
  * 
- *  19 * 10
+ *  19 * 10 = 190
+ *  a * b = q
+ *  a = q / b 
  *  19 * 11
  *   Both results have the same digits but are reordered.
  * 
@@ -77,3 +79,35 @@ console.log(Matrix(4))
  * 
  * 
  */
+// function findLowestInt(k) {
+//     // your code here
+//     const k1 = k;
+//     const k2 = k1 + 1;
+
+//     const n * k
+
+
+
+//     var lowestInt;
+//     return lowestInt;
+// }
+
+// findLowestInt(100)
+
+
+
+
+function Matrix2(N){
+    let matrix = [];
+
+    for (let row = 1; row <= N; row ++){
+        let rowArray = [];
+        for (let column = 1; column < N + 1; column = column + row){
+            rowArray.push(row * column)
+        }
+        matrix.push(rowArray)
+    }
+        return matrix
+}
+
+console.log(Matrix2(30))
