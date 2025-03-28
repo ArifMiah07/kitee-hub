@@ -57,7 +57,7 @@ const BoxGen = () => {
 
     for (let row = 1; row <= N; row++) {
       let rowArray = [];
-      for (let column = 1; column < N + 1; column = column + row) {
+      for (let column = 1; column < N + 1; column = column + column) {
         rowArray.push(row * column);
       }
       matrix.push(rowArray);
@@ -160,7 +160,6 @@ const BoxGen = () => {
             <p className=" flex flex-row text-center text-[10px] ">{"0"}</p>
           </div>
         </div>
-      </div>
         <div className="w-full  h-fit flex flex-row flex-wra items-end gap-2 border border-green-900 4">
           {matrix.map((els, indx) => (
             <div className="w-full h-fit flex items-end gap-2 bg-[#ffecaa] border border-green-900 4" key={indx}>
@@ -190,6 +189,7 @@ const BoxGen = () => {
             </div>
           ))}
         </div>
+      </div>
     </div>
   );
 };

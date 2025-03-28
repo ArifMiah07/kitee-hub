@@ -97,17 +97,11 @@ console.log(Matrix(4))
 
 
 
-function Matrix2(N){
-    let matrix = [];
+function fibonacci(N){
+    
+    
 
-    for (let row = 1; row <= N; row ++){
-        let rowArray = [];
-        for (let column = 1; column < N + 1; column = column + row){
-            rowArray.push(row * column)
-        }
-        matrix.push(rowArray)
-    }
-        return matrix
+    
 }
 
-console.log(Matrix2(30))
+console.log(fibonacci(30))
