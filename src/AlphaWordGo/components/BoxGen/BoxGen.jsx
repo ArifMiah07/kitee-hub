@@ -1,37 +1,20 @@
-
 import { useState } from "react";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export const SquareMesh = ()=> {
-
-  const [clientsX, setClientsX] = useState(0)
-  const [clientsY, setClientsY] = useState(0)
+export const SquareMesh = () => {
+  const [clientsX, setClientsX] = useState(0);
+  const [clientsY, setClientsY] = useState(0);
 
   const handleMouseMove = (e) => {
-    setClientsX(e.clientX)
-    setClientsY(e.clientY)
+    setClientsX(e.clientX);
+    setClientsY(e.clientY);
     console.log(`Mouse at: X=${e.clientX}, Y=${e.clientY}`);
   };
 
   // console.log( 'clientsX: ', clientsX , "clientsY: ",clientsY)
-  
-  // return ;
-  
 
-  const handleCngPosition =(e)=> {
+  // return ;
+
+  const handleCngPosition = (e) => {
     console.log(e);
     // console.log("Event Type:", e.type);
     // console.log("React Event Name:", e._reactName);
@@ -63,42 +46,37 @@ export const SquareMesh = ()=> {
     // console.log("Modifier State (CapsLock Example):", e.getModifierState("CapsLock"));
     // console.log("Is Default Prevented?:", e.isDefaultPrevented());
     // console.log("Is Propagation Stopped?:", e.isPropagationStopped());
-  }
-  
+  };
 
-  const arr = new Array(16).fill(' ');
-  const array = new Array(16).fill(' ');
+  const arr = new Array(16).fill(" ");
+  const array = new Array(16).fill(" ");
   // console.log(arr);
-
 
   return (
     <>
       <div onMouseMove={handleMouseMove} className="p-5">
-      <h1>{ `mouse position: ${clientsX} , ${clientsY}`}</h1>
+        <h1>{`mouse position: ${clientsX} , ${clientsY}`}</h1>
         <h1>this is square mash</h1>
         <div className="flex flex-wrap  flex-shrink items-center justify-center ">
-          {
-            arr?.map((a, i)=> (
-              <>
+          {arr?.map((a, i) => (
+            <>
               <div key={i}>
-                {
-                  array.map((arr, i)=> (
-                    <div onClick={handleCngPosition} className={`w-10 h-10 p-2 border-r border-b border-gray-700   bg-teal-300  hover:border hover:border-green-500 hover:border-dashed hover:bg-purple-800 focus:border-r focus:border-b focus:border-gray-700 focus:bg-orange-600`} key={i+1} >
+                {array.map((arr, i) => (
+                  <div
+                    onClick={handleCngPosition}
+                    className={`w-10 h-10 p-2 border-r border-b border-gray-700   bg-teal-300  hover:border hover:border-green-500 hover:border-dashed hover:bg-purple-800 focus:border-r focus:border-b focus:border-gray-700 focus:bg-orange-600`}
+                    key={i + 1}>
                     {arr}
                   </div>
-                  ))
-                }
+                ))}
               </div>
-              </>
-            ))
-          }
+            </>
+          ))}
         </div>
       </div>
-    
     </>
-  )
-}
-
+  );
+};
 
 export const DraggableDiv = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -107,14 +85,14 @@ export const DraggableDiv = () => {
   const handleMouseDown = (e) => {
     // Start dragging and calculate initial offset (clientX, clientY)
     setDragging(true);
-    const offsetX = e.clientX - position.x;  // Calculate the difference between click position and current position
+    const offsetX = e.clientX - position.x; // Calculate the difference between click position and current position
     const offsetY = e.clientY - position.y;
 
     const handleMouseMove = (moveEvent) => {
       if (dragging) {
         // Use clientX and clientY to update the position of the div
         setPosition({
-          x: moveEvent.clientX - offsetX,  // Move the div based on the mouse's position
+          x: moveEvent.clientX - offsetX, // Move the div based on the mouse's position
           y: moveEvent.clientY - offsetY,
         });
       }
@@ -122,43 +100,34 @@ export const DraggableDiv = () => {
 
     const handleMouseUp = () => {
       setDragging(false); // Stop dragging
-      window.removeEventListener('mousemove', handleMouseMove); // Cleanup listeners
-      window.removeEventListener('mouseup', handleMouseUp);
+      window.removeEventListener("mousemove", handleMouseMove); // Cleanup listeners
+      window.removeEventListener("mouseup", handleMouseUp);
     };
 
-    window.addEventListener('mousemove', handleMouseMove); // Start moving the div
-    window.addEventListener('mouseup', handleMouseUp); // End dragging
+    window.addEventListener("mousemove", handleMouseMove); // Start moving the div
+    window.addEventListener("mouseup", handleMouseUp); // End dragging
   };
 
   return (
     <div
-      onMouseDown={handleMouseDown}  // Start dragging when mouse is pressed down
+      onMouseDown={handleMouseDown} // Start dragging when mouse is pressed down
       style={{
-        position: 'absolute',
+        position: "absolute",
         left: `${position.x}px`,
         top: `${position.y}px`,
-        width: '100px',
-        height: '100px',
-        backgroundColor: 'teal',
-        cursor: 'move',
-      }}
-    >
+        width: "100px",
+        height: "100px",
+        backgroundColor: "teal",
+        cursor: "move",
+      }}>
       {/* Drag me! */}
     </div>
   );
 };
 
-
-
-
-
-
-
-
-
-
 const BoxGen = () => {
   const [ab, setAn] = useState([]);
+  console.log(ab, setAn);
 
   const a = [];
   const randomSize = () => {
@@ -237,17 +206,11 @@ const BoxGen = () => {
     <div className="w-full h-full flex flex-col items-center border border-red-500">
       <h1>Box gen</h1>
 
-
       <div className="p-4 w-full h-full">
         <SquareMesh></SquareMesh>
       </div>
-      
-
-
-
 
       <div className="bg-[#ff5fa0] p-12 w-full h-full flex flex-row items-center border border-green-900 ">
-
         <div className=" w-fit h-[400px] flex flex-col items-end justify-between border-green-900 p-4  ">
           <div
             //   style={{ width: "3px", height: `${ac}px` }}
@@ -329,7 +292,9 @@ const BoxGen = () => {
         </div>
         <div className="w-full  h-fit flex flex-row flex-wra items-end gap-2 border border-green-900 4">
           {matrix.map((els, indx) => (
-            <div className="w-full h-fit flex items-end gap-2 bg-[#ffecaa] border border-green-900 4" key={indx}>
+            <div
+              className="w-full h-fit flex items-end gap-2 bg-[#ffecaa] border border-green-900 4"
+              key={indx}>
               {els.map((el, i) => (
                 <div className="bg-[#aaccee] " key={i}>
                   <div
@@ -341,14 +306,12 @@ const BoxGen = () => {
                   </div>
                   <div
                     style={{ width: "3px", height: `${el}px` }}
-                    className="bg-green-400 ml-2">
-
-                  </div>
+                    className="bg-green-400 ml-2"></div>
                   <div
-                      //   style={{ width: "3px", height: `${ac}px` }}
-                      className="bg-green-400 mt-1 ">
+                    //   style={{ width: "3px", height: `${ac}px` }}
+                    className="bg-green-400 mt-1 ">
                     <p className=" flex flex-row text-center text-[10px] ">
-                        {i + 1}
+                      {i + 1}
                     </p>
                   </div>
                 </div>

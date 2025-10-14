@@ -1,6 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
-
-// import Main from "../layouts/Main/Main";
+import { createHashRouter } from "react-router-dom"; // Changed from createBrowserRouter
 import Home from "../Home/Home/Home";
 import About from "../Home/About/About";
 import EmailGen from "../AlphaWordGo/components/Email/EmailGen/EmailGen";
@@ -21,10 +19,7 @@ import MotionContact from "../motion/Pages/Features/Contact/Contact";
 import MotionSurprise from "../motion/Pages/Features/Surprise/Surprise";
 import ErrorPage from "../motion/Pages/Shared/ErrorPage/ErrorPage";
 
-
-
-
-const router = createBrowserRouter([
+const router = createHashRouter([ // ONLY CHANGE: createHashRouter instead of createBrowserRouter
   {
     path: "/",
     element: <Root></Root>,
@@ -79,11 +74,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/motion",
-    element: <MainFromMotion />, // Main layout for motion
-    errorElement: <ErrorPage />, // Global error handling for motion routes
+    element: <MainFromMotion />,
+    errorElement: <ErrorPage />,
     children: [
       {
-        index: true, // Default route for "/motion"
+        index: true,
         element: <HomeFromMotion />,
       },
       {
@@ -103,7 +98,7 @@ const router = createBrowserRouter([
         element: <MotionSurprise />,
       },
       {
-        path: "*", // Catch-all route for 404 errors inside /motion
+        path: "*",
         element: <ErrorPage />,
       },
     ],
